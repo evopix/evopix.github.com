@@ -37,6 +37,11 @@ end
 #   code "echo 127.0.0.1 #{site[:host]} #{site[:aliases].join(" ")} >> /etc/hosts"
 # end
 
+# trust rvmrc
+open("/home/vagrant/.rvmrc", 'a') do |f|
+  f.puts "\nexport rvm_trust_rvmrcs_flag=1"
+end
+
 # bundle
 execute "bundle" do
   command "cd /vagrant && bundle install"
