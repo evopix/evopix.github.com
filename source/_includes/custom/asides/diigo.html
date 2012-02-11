@@ -1,0 +1,45 @@
+{% if site.diigo_user %}
+<section>
+	<h1>On Diigo</h1>
+	<ul id="diigo_linkroll">
+		<li class="loading">Fetching linkroll...</li>
+	</ul>
+	<p><a href="http://diigo.com/user/{{ site.diigo_user }}">My Diigo Library &raquo;</a></p>
+	<script type="text/javascript">
+		var diigo_linkroll = '#diigo_linkroll',
+			diigo_user = '{{ site.diigo_user }}',
+			diigo_count = {{ site.diigo_count }},
+			diigo_url = encodeURIComponent('http://www.diigo.com/rss/user/' + diigo_user + '?type=link');
+
+		(function() {
+			var diigoInit = document.createElement('script');
+			diigoInit.type = 'text/javascript';
+			diigoInit.async = true;
+			diigoInit.src = 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=renderDiigo&q=' + diigo_url;
+
+			document.getElementsByTagName('head')[0].appendChild(diigoInit);
+		})();
+
+		function renderDiigo(data) {
+			var entries = data.responseData.feed.entries,
+				$linkroll = $(diigo_linkroll);
+
+			$linkroll.find('li.loading').remove();
+
+			for (var i = 1, len = entries.length; i <= diigo_count; i++) {
+				var entry = entries[i],
+					$item = $('<li class="diigo-item"><p /></li>');
+
+				$item.find('p').append('<a class="diigo-title" href="' + entry.link + '">' + entry.title + '</a>');
+
+				var description = $(entry.content).find('p:first-child').text();
+				if (description) {
+					$item.find('p').append('<p class="diigo-description">' + description + '</p>');
+				}
+
+				$linkroll.append($item);
+			}
+		}
+	</script>
+</section>
+{% endif %}
