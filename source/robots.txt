@@ -1,0 +1,10 @@
+---
+permalink: none
+---
+
+User-agent: *
+Disallow: /blog/archives/
+Disallow: /blog/tags/
+Disallow: /blog/categories/
+
+Sitemap: {{ site.url }}/sitemap.xml

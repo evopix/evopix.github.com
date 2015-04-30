@@ -1,0 +1,156 @@
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-bottom: 1.8rem;
+}
+
+.blog-main {
+    font-size: 18px;
+}
+
+/* Archives
+-------------------------------------------------- */
+
+.blog-archives {
+
+}
+
+.blog-archives h2 {
+    display: inline-block;
+    margin: 0;
+    padding-top: .5em;
+}
+
+.blog-archives article {
+    position: relative;
+    padding: 1em 0;
+    padding-left: 5em;
+}
+
+.blog-archives article time {
+    position: absolute;
+    text-align: right;
+    left: 0;
+    top: 1.1em;
+    line-height: 2em;
+}
+
+.blog-archives article,
+.blog-archives h2 {
+    border-top: 1px dotted #ccc;
+}
+
+@media (min-width: 992px) {
+    .blog-archives > .row:first-of-type article:first-of-type,
+    .blog-archives > .row:first-of-type > .year > h2 {
+        border-top: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .blog-archives h2 {
+        display: block;
+        padding: 1em 0; 
+    }
+
+    .blog-archives > .row:first-of-type > .year > h2 {
+        border-top: none;
+        padding-top: 0.5em;
+    }
+}
+
+/* Posts
+-------------------------------------------------- */
+
+.post {
+    margin-bottom: 4em;
+}
+
+.post-date {
+    display: block;
+    margin-top: 10;
+    margin-bottom: 20px;
+    color: #9A9A9A;
+}
+
+footer > .post-meta > time::before, 
+footer > .post-meta > .categories::before, 
+footer > .post-meta > .tags::before {
+    content: "•";
+    padding: 0px 0.4em 0px 0.2em;
+    display: inline-block;
+}
+
+.post-meta > .byline + time {
+    padding: 0;
+}
+
+footer > .post-meta {
+    font-size: 14px;
+}
+
+.post > footer {
+    margin-top: 2em;
+    padding-bottom: 2.5em;
+}
+
+/* Highlight
+-------------------------------------------------- */
+
+.hljs {
+    background-color: transparent;
+}
+
+.highlight {
+    margin-bottom: 1.8rem;
+}
+
+.highlight > pre {
+    background-color: #F9F9F9;
+    border: none;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+.colophon {
+    font-size: 18px;
+}
+
+.colophon:before {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 1px;
+  margin: 4em auto;
+  background-color: #eee;
+}
+.colophon ul,
+.colophon p {
+  text-align: center;
+  font-size: .75em;
+  color: #999;
+  padding: 0;
+}
+.colophon ul {
+  margin-left: 0;
+}
+.colophon ul li {
+  display: inline;
+  padding: 0 .75em;
+}
+.colophon ul a {
+  white-space: nowrap;
+}
+
+.portrait {
+  float: left;
+  margin-right: 20px;
+}

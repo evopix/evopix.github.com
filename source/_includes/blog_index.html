@@ -1,0 +1,14 @@
+<div class="blog-index">
+    {% set index = true %}
+    {% for post in page.pagination.items %}
+        <article class="post">
+            {% include "article" %}
+        </article>
+    {% endfor %}
+    {% if page.pagination.previous_page or page.pagination.next_page %}
+        <nav class="pagination btn-group btn-group-lg">
+            <a class="next btn btn-default {% if not page.pagination.next_page %}disabled{% endif %}" href="{{ page.pagination.next_page.url }}">&larr; Older</a>
+            <a class="prev btn btn-default {% if not page.pagination.previous_page %}disabled{% endif %}" href="{{ page.pagination.previous_page.url }}">Newer &rarr;</a>
+        </nav>
+    {% endif %}
+</div>

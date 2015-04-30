@@ -1,0 +1,7 @@
+/.sculpin/
+/app/cache/*
+/app/config/sculpin_kernel_*.yml
+/app/logs/*
+/output_*/
+/source/components/
+s3.conf

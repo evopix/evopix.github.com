@@ -1,0 +1,8 @@
+{% extends "base" %}
+{% block content_wrapper %}
+
+    <article class="hentry" role="article">
+        {% include "article" with {post: page} %}
+    </article>
+
+{% endblock %}

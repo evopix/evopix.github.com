@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="row">
+		<div class="blog-main col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+		    {% if page.blocks.content_wrapper %}
+		        {{ page.blocks.content_wrapper|raw }}
+		    {% else %}
+		        {{ page.blocks.content|raw }}
+		    {% endif %}
+	    </div>
+	</div>
+</div>
