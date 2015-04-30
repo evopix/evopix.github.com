@@ -17,5 +17,5 @@ git add *
 git commit -m "$1"
 git push origin --all
 
-git checkout drafts
+git checkout sculpin
 git stash pop
