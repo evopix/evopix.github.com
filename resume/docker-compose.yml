@@ -1,0 +1,34 @@
+version: "3.7"
+services:
+  html-builder:
+    user: pwuser
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    command: npx hackmyresume build resume.json TO resume.html -o options.json
+  txt-builder:
+    user: pwuser
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    command: npx hackmyresume build resume.json TO resume.txt resume.md resume.md
+  pdf-builder:
+    user: pwuser
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+        - type: bind
+          source: ./
+          target: /app
+    command: ["node", "build-pdf.js"]
+    depends_on:
+      - html-builder
