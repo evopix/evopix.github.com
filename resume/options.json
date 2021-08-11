@@ -1,0 +1,4 @@
+{
+    "pdf": "phantomjs",
+    "theme": "./theme"
+}
