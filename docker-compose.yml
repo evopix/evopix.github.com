@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  sculpin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./
+        target: /app

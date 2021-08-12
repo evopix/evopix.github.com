@@ -51,6 +51,7 @@ h4 {
 .job-position, .job-dates {
     color: var(--bs-gray);
 }
+
 .skill-keywords .list-inline li:not(:last-child):after{
     content:'\2022';
     margin-left: 0.5rem;

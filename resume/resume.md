@@ -16,8 +16,8 @@ Tel: (425) 760-6214
 ### *Senior Software Engineer*,  (2015-06 — Present)
 
 Lead developer on numerous projects as well as managing all team specific DevOps/Infrastructure work.
-  - Lead development of new REST API to unify data across all consumers and clients
-  - Lead project to rewrite Admin panel in modern framework
+  - Led development of new REST API to unify data across all consumers and clients
+  - Led project to rewrite Admin panel in modern framework
   - Took over team specific DevOps work from previous engineer
   - Migrated all newer projects to use containers and be managed by Terraform
   - Built new deployment tool that integrated with our specific workflow
