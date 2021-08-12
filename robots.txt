@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /blog/archives/
+Disallow: /blog/tags/
+Disallow: /blog/categories/
+
+Sitemap: http://brandonsummers.name/sitemap.xml
