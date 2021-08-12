@@ -5,7 +5,8 @@ if [ $# -ne 1 ]; then
     exit 1;
 fi
 
-sculpin generate --env=prod
+npx encore production
+vendor/bin/sculpin generate --env=prod
 
 git stash
 git checkout master
