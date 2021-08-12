@@ -6,5 +6,6 @@
 /source/components/
 s3.conf
 node_modules
+/source/build
 
 /vendor/
