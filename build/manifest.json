@@ -1,12 +1,13 @@
 {
-  "build/app.css": "/build/app.css",
-  "build/app.js": "/build/app.js",
-  "build/jackson/2048x2048.png": "/build/jackson/2048x2048.png",
-  "build/jackson/1024x1024.png": "/build/jackson/1024x1024.png",
-  "build/jackson/512x512.png": "/build/jackson/512x512.png",
-  "build/jackson/196x196.png": "/build/jackson/196x196.png",
-  "build/jackson/152x152.png": "/build/jackson/152x152.png",
-  "build/jackson/128x128.png": "/build/jackson/128x128.png",
-  "build/jackson/120x120.png": "/build/jackson/120x120.png",
-  "build/jackson/76x76.png": "/build/jackson/76x76.png"
+  "build/app.css": "/build/app.a30459d8.css",
+  "build/app.js": "/build/app.33a9171f.js",
+  "build/jackson/2048x2048.png": "/build/jackson/2048x2048.b24e3f07.png",
+  "build/jackson/1024x1024.png": "/build/jackson/1024x1024.dc42e285.png",
+  "build/jackson/512x512.png": "/build/jackson/512x512.9ab3fab8.png",
+  "build/me.png": "/build/me.d2d7d728.png",
+  "build/jackson/196x196.png": "/build/jackson/196x196.8b292ea9.png",
+  "build/jackson/152x152.png": "/build/jackson/152x152.3c326467.png",
+  "build/jackson/128x128.png": "/build/jackson/128x128.15af1f16.png",
+  "build/jackson/120x120.png": "/build/jackson/120x120.af8487b9.png",
+  "build/jackson/76x76.png": "/build/jackson/76x76.ad5bb935.png"
 }
