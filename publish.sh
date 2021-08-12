@@ -7,8 +7,8 @@ fi
 
 git stash
 
-npx encore production
-vendor/bin/sculpin generate --env=prod
+docker-compose run sculpin npx encore production
+docker-compose run sculpin vendor/bin/sculpin generate --env=prod
 
 git checkout master
 
