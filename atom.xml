@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title><![CDATA[Brandon Summers]]></title>
-    <link href="http://evopix.github.com/atom.xml" rel="self"/>
-    <link href="http://evopix.github.com/"/>
-    <updated>2015-04-30T05:13:17+00:00</updated>
-    <id>http://evopix.github.com/</id>
+    <link href="http://brandonsummers.name/atom.xml" rel="self"/>
+    <link href="http://brandonsummers.name/"/>
+    <updated>2021-08-11T15:02:31+00:00</updated>
+    <id>http://brandonsummers.name/</id>
             <author>
             <name><![CDATA[Brandon Summers]]></name>                    </author>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
             <title type="html"><![CDATA[Using Bitbucket for Automated Deployments]]></title>
-            <link href="http://evopix.github.com/blog/2012/02/10/using-bitbucket-for-automated-deployments"/>
+            <link href="http://brandonsummers.name/blog/2012/02/10/using-bitbucket-for-automated-deployments/"/>
             <updated>2012-02-10T17:01:00+00:00</updated>
-            <id>http://evopix.github.com/blog/2012/02/10/using-bitbucket-for-automated-deployments</id>
+            <id>http://brandonsummers.name/blog/2012/02/10/using-bitbucket-for-automated-deployments/</id>
             <content type="html"><![CDATA[<p>There are many different ways to handle deployments, but I have become very fond of using Bitbucket's <a href="http://confluence.atlassian.com/display/BITBUCKET/Managing+bitbucket+Services">service hooks</a>. In this case we're going to be using the <a href="http://confluence.atlassian.com/display/BITBUCKET/Setting+Up+the+bitbucket+POST+Service">POST service hook</a>, which is basically a git post-receive hook that sends a POST request to a given url every time you push to your repository.</p>
 
 <p><em>Note: This is a really simple and effecient way to handle deployments for smaller projects (e.g. Static websites, Wordpress, etc.), but if your project is any bigger than those you should really be using a <a href="http://en.wikipedia.org/wiki/Continuous_integration">CI server</a> to push out deployments.</em></p>

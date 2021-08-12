@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://evopix.github.com</loc>
-    <lastmod>2015-04-30</lastmod>
+    <loc>http://brandonsummers.name</loc>
+    <lastmod>2021-08-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
     <url>
-    <loc>http://evopix.github.com/blog/2012/02/10/using-bitbucket-for-automated-deployments</loc>
+    <loc>http://brandonsummers.name/blog/2012/02/10/using-bitbucket-for-automated-deployments/</loc>
     <lastmod>2012-02-10T17:01:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
