@@ -1,0 +1,118 @@
+{
+    "basics": {
+        "name": "Brandon Summers",
+        "label": "Accomplished Lead Engineer",
+        "email": "brandon@brandonsummers.name",
+        "phone": "(425) 760-6214",
+        "url": "http://brandonsummers.name",
+        "location": {
+            "city": "Seattle",
+            "countryCode": "US",
+            "region": "Washington"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "evopix",
+                "url": "https://github.com/evopix"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "brandonsummers",
+                "url": "https://linkedin.com/in/brandonsummers"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "iSpot.tv",
+            "location": "Bellevue, WA",
+            "position": "Senior Software Engineer",
+            "url": "https://www.ispot.tv",
+            "startDate": "2015-06",
+            "summary": "Lead developer on numerous projects as well as managing all team specific DevOps/Infrastructure work.",
+            "highlights": [
+                "Led development of new REST API to unify data across all consumers and clients",
+                "Led project to rewrite Admin panel in modern framework",
+                "Took over team specific DevOps work from previous engineer",
+                "Migrated all newer projects to use containers and be managed by Terraform",
+                "Built new deployment tool that integrated with our specific workflow",
+                "Aided migration from Jenkins to CircleCI for most of our projects"
+            ]
+        },
+        {
+            "name": "DrivingSales, LLC",
+            "location": "Remote",
+            "position": "Senior Software Engineer",
+            "url": "https://www.drivingsales.com",
+            "startDate": "2012-03",
+            "endDate": "2014-12",
+            "summary": "Lead backend developer on an analytics platform writing primarily PHP (Kohana Framework). Enhanced data processing and collection capabilities and improved scalability.",
+            "highlights": [
+                "Improved scalability by migrating to AWS OpsWorks platform and splitting a single dedicated server into multiple independently scalable layers",
+                "Built a modular reporting system that could generate many different types of reports",
+                "Migrated database from a combination of MySQL and MongoDB to just PostgreSQL",
+                "Built an efficient export system that could export large amounts of data into many different formats",
+                "Implemented a Redis based job queuing system for all data processing",
+                "Enhanced and extended data mining and aggregation algorithms"
+            ]
+        },
+        {
+            "name": "BoxWave",
+            "location": "Kirkland, WA",
+            "position": "Software Engineer",
+            "url": "https://www.boxwave.com",
+            "startDate": "2011-05",
+            "endDate": "2011-09",
+            "summary": "As part of the development team, my responsibilities included the company’s custom ERP system, customer facing e-commerce website, as well as all new web related projects.",
+            "highlights": [
+                "Built a custom lightweight ColdFusion framework for use in the redesign of the company’s e-commerce website",
+                "Enhanced and extended features of custom ERP system ",
+                "Converted design mock-ups into usable pages for the redesign of main e-commerce website"
+            ]
+        },
+        {
+            "name": "Seven Springs Sales, LLC",
+            "location": "Granite Falls, WA",
+            "position": "Web Developer",
+            "url": "https://prowheelracing.com",
+            "startDate": "2005-09",
+            "endDate": "2011-04",
+            "summary": "Originally hired to maintain existing online projects and aid in the creation of marketing materials, my role eventually grew to overseeing a second graphics designer, as well as creating custom web applications for both offline intranet use and online customer use.",
+            "highlights": [
+                "Built a custom e-commerce web application, for use on multiple company websites",
+                "Built a sponsorship management system as an extension of the MODx CMS",
+                "Created company catalogs and advertisements",
+                "Helped to create design mock-ups, per customer needs, for custom products"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Specialties",
+            "keywords": [
+                "API Design and Development",
+                "PHP",
+                "JavaScript",
+                "NodeJS",
+                "Symfony",
+                "AWS",
+                "Docker",
+                "Terraform",
+                "MySQL",
+                "PostgreSQL",
+                "Redis"
+            ]
+        },
+        {
+            "name": "Supplemental",
+            "keywords": [
+                "Python",
+                "Golang",
+                "Snowflake",
+                "DevOps",
+                "SysAdmin"
+            ]
+        }
+    ]
+}
