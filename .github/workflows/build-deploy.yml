@@ -46,7 +46,7 @@ jobs:
       - name: Build Site
         run: |
           npx encore production
-          vendor/bin/sculpin generate --env=prod
+          vendor/bin/sculpin generate -vvv --env=prod
           ls -alh
           cd output_prod && ls -alh
 
