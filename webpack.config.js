@@ -11,6 +11,10 @@ Encore
     .copyFiles({
         from: './source/assets/images'
     })
+    .copyFiles({
+        from: './resume',
+        pattern: '/resume\.(json|html|pdf|md|txt)$/'
+    })
     .addEntry('app', './source/assets/js/app.js')
 
     .disableSingleRuntimeChunk()
