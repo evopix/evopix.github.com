@@ -13,7 +13,8 @@ Encore
     })
     .copyFiles({
         from: './resume',
-        pattern: '/resume\.(json|html|pdf|md|txt)$/'
+        pattern: /resume\.(json|html|pdf|md|txt)$/,
+        to: 'resume/Brandon-Summers_Resume.[hash:8].[ext]',
     })
     .addEntry('app', './source/assets/js/app.js')
 
