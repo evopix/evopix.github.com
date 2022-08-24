@@ -40,7 +40,6 @@ jobs:
           npx hackmyresume build resume.json TO output/resume.html -o options.json
           npx hackmyresume build resume.json TO output/resume.txt output/resume.md output/resume.md
           node build-pdf.js
-          cp resume.pdf ./output
           cp resume.json ./output
           ls -alh
 
