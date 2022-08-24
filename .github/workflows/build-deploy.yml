@@ -36,9 +36,12 @@ jobs:
       - name: Build Resume
         working-directory: ./resume
         run: |
-          npx hackmyresume build resume.json TO resume.html -o options.json
-          npx hackmyresume build resume.json TO resume.txt resume.md resume.md
+          mkdir output
+          npx hackmyresume build resume.json TO output/resume.html -o options.json
+          npx hackmyresume build resume.json TO output/resume.txt output/resume.md output/resume.md
           node build-pdf.js
+          cp resume.pdf ./output
+          cp resume.json ./output
           ls -alh
 
       - name: Build Site

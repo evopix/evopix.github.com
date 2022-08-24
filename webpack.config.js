@@ -12,7 +12,7 @@ Encore
         from: './source/assets/images'
     })
     .copyFiles({
-        from: './resume',
+        from: './resume/output',
         pattern: /resume\.(json|html|pdf|md|txt)$/,
         to: 'resume/Brandon-Summers_Resume.[hash:8].[ext]',
     })
