@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
+      - *
 permissions:
   contents: write
 jobs:
@@ -12,54 +12,28 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
-          extensions: mbstring,iconv,posix,intl,zip,bcmath
-          tools: composer
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          node-version: 16
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
+          hugo-version: '0.101.0'
+          extended: true
 
-      - name: Install Dependencies
-        run: |
-          npm install
-          cd resume && npm install && npx playwright install-deps chromium && cd ..
-          composer install
+      - name: Build
+        run: hugo --minify
 
-      - name: Build Resume
-        working-directory: ./resume
-        run: |
-          mkdir output
-          npx hackmyresume build resume.json TO output/resume.html -o options.json
-          npx hackmyresume build resume.json TO output/resume.txt output/resume.md output/resume.md
-          node build-pdf.js
-          cp resume.json ./output
-          ls -alh
-
-      - name: Build Site
-        run: |
-          npx encore production
-          vendor/bin/sculpin generate -vvv --env=prod
-          ls -alh
-          cd output_prod && ls -alh
-
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact-site
+          path: public/*
 
       - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: output_prod
+          folder: public
           clean: true
-          clean-exclude: |
-            CNAME
-            .nojekyll
