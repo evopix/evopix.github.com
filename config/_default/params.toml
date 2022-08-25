@@ -308,3 +308,6 @@ thumbnailUrl = "/images/me.png"
 
 # LoveIt NEW | 0.2.0 Analytics config
 [analytics]
+enable = true
+[analytics.google]
+    id = "G-328744705"
