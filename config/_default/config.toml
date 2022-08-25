@@ -1,0 +1,39 @@
+baseURL = 'https://brandonsummers.name/'
+languageCode = 'en-us'
+languageName = 'English'
+title = 'Brandon Summers'
+theme = 'LoveIt'
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+# whether to include Chinese/Japanese/Korean
+hasCJKLanguage = false
+
+# default amount of posts in each pages
+paginate = 12
+# google analytics code [UA-XXXXXXXX-X]
+googleAnalytics = "UA-29125605-1"
+# copyright description used only for seo schema
+copyright = ""
+
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+
+# Author config
+[author]
+  name = "Brandon Summers"
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[permalinks]
+  posts = '/posts/:year/:month/:day/:title/'

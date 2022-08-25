@@ -1,0 +1,7 @@
+{{- $fromDate := .Get 0 | time.AsTime -}}
+{{- $toDate := .Get 1 | default time.Now -}}
+{{- $timeBetween := $toDate.Sub $fromDate -}}
+{{- $hours := $timeBetween.Hours -}}
+{{- $days := div $hours 24 -}}
+{{- $years := div $days 365 -}}
+{{ math.Round $years }}

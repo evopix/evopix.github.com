@@ -1,0 +1,310 @@
+# site default theme ["auto", "light", "dark"]
+defaultTheme = "light"
+# public git repo url only then enableGitInfo is true
+# gitRepo = ""
+# LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+# ["sha256", "sha384", "sha512", "md5"]
+# fingerprint = ""
+# LoveIt NEW | 0.2.0 date format
+dateFormat = "2006-01-02"
+# website title for Open Graph and Twitter Cards
+title = "Brandon Summers"
+# website description for RSS, SEO, Open Graph and Twitter Cards
+description = ""
+# website images for Open Graph and Twitter Cards
+images = ["/images/me.png"]
+
+# Header config
+[header]
+# desktop header mode ["fixed", "normal", "auto"]
+desktopMode = "fixed"
+# mobile header mode ["fixed", "normal", "auto"]
+mobileMode = "auto"
+# LoveIt NEW | 0.2.0 Header title config
+[header.title]
+    # URL of the LOGO
+    logo = "/images/logo.png"
+    # title name
+    name = "Brandon Summers"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
+    typeit = false
+
+# Footer config
+[footer]
+enable = true
+# LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
+custom = ''
+# LoveIt NEW | 0.2.0 whether to show Hugo and theme info
+hugo = false
+# LoveIt NEW | 0.2.0 whether to show copyright info
+copyright = true
+# LoveIt NEW | 0.2.0 whether to show the author
+author = true
+# Site creation time
+since = 2012
+# ICP info only in China (HTML format is supported)
+# icp = ""
+# license info (HTML format is supported)
+license = ''
+
+# LoveIt NEW | 0.2.0 Section (all posts) page config
+[section]
+# special amount of posts in each section page
+paginate = 20
+# date format (month and day)
+dateFormat = "01-02"
+# amount of RSS pages
+rss = 10
+
+# LoveIt NEW | 0.2.0 List (category or tag) page config
+[list]
+# special amount of posts in each list page
+paginate = 20
+# date format (month and day)
+dateFormat = "01-02"
+# amount of RSS pages
+rss = 10
+
+# LoveIt NEW | 0.2.0 App icon config
+[app]
+# optional site title override for the app when added to an iOS home screen or Android launcher
+title = ""
+# whether to omit favicon resource links
+noFavicon = false
+# modern SVG favicon to use in place of older style .png and .ico files
+svgFavicon = ""
+# Android browser theme color
+themeColor = "#ffffff"
+# Safari mask icon color
+iconColor = "#5bbad5"
+# Windows v8-10 tile color
+tileColor = "#da532c"
+
+# Home page config
+[home]
+# LoveIt NEW | 0.2.0 amount of RSS pages
+rss = 10
+# Home page profile
+[home.profile]
+    enable = true
+    # Gravatar Email for preferred avatar in home page
+    gravatarEmail = ""
+    # URL of avatar shown in home page
+    avatarURL = "/images/me.png"
+    # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
+    title = ""
+    # subtitle shown in home page (HTML format is supported)
+    subtitle = ""
+    # whether to use typeit animation for subtitle
+    typeit = false
+    # whether to show social links
+    social = true
+    # LoveIt NEW | 0.2.0 disclaimer (HTML format is supported)
+    disclaimer = ""
+# Home page posts
+[home.posts]
+    enable = true
+    # special amount of posts in each home posts page
+    paginate = 6
+
+# Social config about the author
+[social]
+GitHub = "evopix"
+Linkedin = "brandonsummers"
+Twitter = "bsummers82"
+Instagram = "bsummers82"
+# Facebook = ""
+# Telegram = ""
+# Medium = ""
+# Gitlab = ""
+# Youtubelegacy = ""
+# Youtubecustom = ""
+# Youtubechannel = ""
+# Tumblr = ""
+# Quora = ""
+# Keybase = ""
+# Pinterest = ""
+# Reddit = ""
+# Codepen = ""
+# FreeCodeCamp = ""
+# Bitbucket = ""
+# Stackoverflow = ""
+# Weibo = ""
+# Odnoklassniki = ""
+# VK = ""
+# Flickr = ""
+# Xing = ""
+# Snapchat = ""
+# Soundcloud = ""
+# Spotify = ""
+# Bandcamp = ""
+# Paypal = ""
+# Fivehundredpx = ""
+# Mix = ""
+# Goodreads = ""
+# Lastfm = ""
+# Foursquare = ""
+# Hackernews = ""
+# Kickstarter = ""
+# Patreon = ""
+# Steam = ""
+# Twitch = ""
+# Strava = ""
+# Skype = ""
+# Whatsapp = ""
+# Zhihu = ""
+# Douban = ""
+# Angellist = ""
+# Slidershare = ""
+# Jsfiddle = ""
+# Deviantart = ""
+# Behance = ""
+# Dribbble = ""
+# Wordpress = ""
+# Vine = ""
+# Googlescholar = ""
+# Researchgate = ""
+# Mastodon = ""
+# Thingiverse = ""
+# Devto = ""
+# Gitea = ""
+# XMPP = ""
+# Matrix = ""
+# Bilibili = ""
+# Discord = ""
+# DiscordInvite = ""
+# Lichess = ""
+# ORCID = ""
+# Pleroma = ""
+# Kaggle = ""
+# MediaWiki= ""
+# Plume = ""
+# HackTheBox = ""
+# RootMe= ""
+# Phone = ""
+# Email = ""
+RSS = true # LoveIt NEW | 0.2.0
+
+# LoveIt CHANGED | 0.2.0 Page global config
+[page]
+# LoveIt NEW | 0.2.0 whether to hide a page from home page
+hiddenFromHomePage = false
+# LoveIt NEW | 0.2.0 whether to hide a page from search results
+hiddenFromSearch = false
+# LoveIt NEW | 0.2.0 whether to enable twemoji
+twemoji = false
+# whether to enable lightgallery
+lightgallery = false
+# LoveIt NEW | 0.2.0 whether to enable the ruby extended syntax
+ruby = true
+# LoveIt NEW | 0.2.0 whether to enable the fraction extended syntax
+fraction = true
+# LoveIt NEW | 0.2.0 whether to enable the fontawesome extended syntax
+fontawesome = true
+# whether to show link to Raw Markdown content of the content
+linkToMarkdown = false
+# LoveIt NEW | 0.2.4 whether to show the full text content in RSS
+rssFullText = false
+# LoveIt NEW | 0.2.0 Table of the contents config
+[page.toc]
+    # whether to enable the table of the contents
+    enable = true
+    # LoveIt NEW | 0.2.9 whether to keep the static table of the contents in front of the post
+    keepStatic = true
+    # whether to make the table of the contents in the sidebar automatically collapsed
+    auto = true
+# LoveIt NEW | 0.2.0 Code config
+[page.code]
+    # whether to show the copy button of the code block
+    copy = true
+    # the maximum number of lines of displayed code by default
+    maxShownLines = 50
+# LoveIt CHANGED | 0.2.0 social share links in post page
+[page.share]
+    enable = true
+    Twitter = true
+    Facebook = true
+    Linkedin = true
+    HackerNews = true
+    Reddit = true
+    Whatsapp = false
+    Pinterest = false
+    Tumblr = false
+    VK = false
+    Buffer = false
+    Xing = false
+    Line = false
+    Instapaper = false
+    Pocket = false
+    Flipboard = false
+    Weibo = false
+    Blogger = false
+    Baidu = false
+    Odnoklassniki = false
+    Evernote = false
+    Skype = false
+    Trello = false
+    Mix = false
+
+# LoveIt CHANGED | 0.2.0 Comment config
+[page.comment]
+    enable = true
+    # Disqus comment config
+    [page.comment.disqus]
+    # LoveIt NEW | 0.1.1
+    enable = true
+    # Disqus shortname to use Disqus in posts
+    shortname = "brandonsummers"
+# LoveIt NEW | 0.2.7 Third-party library config
+[page.library]
+    [page.library.css]
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+    [page.library.js]
+    # someJavascript = "some.js"
+    # located in "assets/"
+    # Or
+    # someJavascript = "https://cdn.example.com/some.js"
+# LoveIt CHANGED | 0.2.10 Page SEO config
+[page.seo]
+    # image URL
+    images = []
+    # Publisher info
+    [params.page.seo.publisher]
+    name = "Brandon Summers"
+    logoUrl = "/images/me.png"
+
+# LoveIt NEW | 0.2.5 TypeIt config
+[typeit]
+# typing speed between each step (measured in milliseconds)
+speed = 100
+# blinking speed of the cursor (measured in milliseconds)
+cursorSpeed = 1000
+# character used for the cursor (HTML format is supported)
+cursorChar = "|"
+# cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+duration = -1
+
+# Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
+[verification]
+google = ""
+bing = ""
+yandex = ""
+pinterest = ""
+baidu = ""
+
+# LoveIt NEW | 0.2.10 Site SEO config
+[seo]
+# image URL
+image = "/images/me.png"
+# thumbnail URL
+thumbnailUrl = "/images/me.png"
+
+# LoveIt NEW | 0.2.0 Analytics config
+[analytics]
