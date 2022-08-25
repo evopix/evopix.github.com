@@ -1,7 +1,8 @@
 ---
 title: "About Me"
 draft: false
-comments: false
+comment:
+  enable: false
 ---
 
 {{< style "img { height: 1.25rem; }" >}}
@@ -18,5 +19,5 @@ comments: false
 {{< style "font-size: 1.25rem" >}}
 I've been a Software Engineer for {{< years "2005-09-01" >}} years now. I spent the first 6 years of my career as a Full Stack Engineer but transitioned to Backend full-time {{< years "2012-03-01" >}} years ago.
 
-I've worked on everything from e-commerce, data platforms, AdTech, and most recently FinTech. I primarily specialize in API developoment but I also have lots of experience in DevOps. I'm very passionate about improving developer experiences and workflows.
+I've worked on everything from e-commerce, data platforms, AdTech, and most recently FinTech. I primarily specialize in API development but I also have lots of experience in DevOps. I'm very passionate about improving developer experiences and workflows.
 {{< /style >}}
