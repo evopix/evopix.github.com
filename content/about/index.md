@@ -3,6 +3,8 @@ title: "About Me"
 draft: false
 comment:
   enable: false
+  disqus:
+    enable: false
 ---
 
 {{< style "img { height: 1.25rem; }" >}}
