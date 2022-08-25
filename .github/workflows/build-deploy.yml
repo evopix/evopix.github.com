@@ -1,8 +1,6 @@
 name: Build and Deploy
 on:
-  push:
-    branches:
-      - *
+  push: {}
 permissions:
   contents: write
 jobs:
