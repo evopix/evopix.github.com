@@ -35,6 +35,14 @@
   title = ""
 [[main]]
   weight = 6
+  identifier = "resume"
+  pre = ""
+  post = ""
+  name = "Resume"
+  url = "https://github.com/evopix/resume/releases/latest/download/resume.pdf"
+  title = ""
+[[main]]
+  weight = 7
   identifier = "github"
   pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
   post = ""
