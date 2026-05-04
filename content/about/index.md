@@ -19,7 +19,7 @@ comment:
 {{< /style >}}
 
 {{< style "font-size: 1.25rem" >}}
-I've been a Software Developer since 2005 and spent the first 6 years of my career as a Full Stack Engineer before transitioning to Backend full-time in 2012.
+I've been building software since 2005, and I've had the fortune of working across a bunch of different industries (e-commerce, data platforms, FinTech, AdTech). I started out as a full-stack engineer early on, but over time I've gravitated toward backend and infrastructure work, with a particular passion for API design, system architecture, and DevOps. 
 
-I've worked on everything from e-commerce, data platforms, FinTech, and AdTech. I primarily specialize in API development but I also have lots of experience in DevOps. I'm very passionate about improving developer experiences and workflows.
+But honestly, what I'm most excited about these days is helping teams move faster and ship better software. That means thinking about developer experience, establishing good standards and processes, mentoring people, and building infrastructure and tooling that doesn't get in the way. I believe that great engineering is as much about the "how" as it is the "what," and I love working in environments where that's valued.
 {{< /style >}}
